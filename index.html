@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Venta de Frutas en Línea</title>
+    <link rel="stylesheet" type="text/css" href="./Estilos/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de Frutas en Línea</h1>
+        <p>¡Bienvenido a nuestra frutería en línea! Aquí puedes comprar frutas frescas y deliciosas.</p>
+    </header>
+
+
+
+    <section>
+        <label for="frutaSelect">Selecciona una fruta:</label>
+        <select id="frutaSelect">
+            <option value="manzana">Manzana - $2,500 COP por unidad</option>
+            <option value="banano">Banano - $1,000 COP por unidad</option>
+            <option value="uva">Uva - $3,750 COP por unidad</option>
+            <option value="naranja">Naranja - $1,250 COP por unidad</option>
+            <option value="fresa">Fresa - $4,000 COP por unidad</option>
+        </select>
+
+        <label for="cantidadInput">Cantidad:</label>
+        <input type="number" id="cantidadInput" value="1" min="1">
+
+        <button onclick="simularCompra()">Comprar</button>
+
+        <h2>Detalle de la compra:</h2>
+        <p id="resultado">Aquí se mostrará el detalle de la compra.</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 Venta de Frutas en Línea</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
